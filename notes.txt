@@ -1,0 +1,19 @@
+# Steps to Create a JAR File from the Java Code
+
+1. Save the Java file as Remerakgl.java.
+
+2. Compile the Java code:
+javac -cp .:mysql-connector-java-8.0.33.jar Remerakgl.java
+
+3. Create the JAR file:
+jar cvf Remerakgl.jar Remerakgl.class
+
+4. Run the JAR file:
+java -cp .:mysql-connector-java-8.0.33.jar -jar Remerakgl.jar
+
+5. Run the JAR in the Background:
+nohup java -cp .:mysql-connector-java-8.0.33.jar -jar Remerakgl.jar > output.log 2>&1 &
+
+======================================================================================
+
+javac -cp src/ src/remerakgl/*.java -d bin
